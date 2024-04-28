@@ -15,7 +15,7 @@ export const Home = () => {
     <div className="containerHome min-h-screen flex flex-col items-center">
       <NavBar />
 
-      <div className="w-full sm:w-3/4 flex flex-col sm:flex-row">
+      <div className="w-full sm:w-3/5 flex flex-col sm:flex-row">
         {/* CONTAINER 1 */}
         {/* CONTAINER 1 */}
         <div className="sm:w-1/2  flex flex-col justify-center items-center">

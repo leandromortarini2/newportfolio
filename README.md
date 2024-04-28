@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -41,3 +42,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # Portfolio-Next
 # PortfolioActualizado
 # PortfolioNextjs
+=======
+# newportfolio
+>>>>>>> 5eb9b5975feb0fb5372568490a4d407a890b9f1d
