@@ -9,6 +9,7 @@ import Whatsapp from "@/assets/whatsapp.png";
 import Facebook from "@/assets/facebook.png";
 import Instagram from "@/assets/instagram.png";
 import Perfil from "@/assets/perfil.png";
+import Link from "next/link";
 
 export const Home = () => {
   return (
@@ -25,7 +26,7 @@ export const Home = () => {
       {/* container general */}
       {/* container general */}
 
-      <div className="w-full flex justify-around ">
+      <div className="w-full flex justify-around  mt-14">
         {/* CONTAINER 1 */}
         {/* CONTAINER 1 */}
         <div className="sm:w-1/2 md:w-1/2 flex flex-col justify-center items-center sm:items-end ">
@@ -46,42 +47,54 @@ export const Home = () => {
           </div>
 
           <div className="sm:w-3/4 h-20 flex justify-start ">
-            <button className="">
+            <Link href="https://github.com/leandromortarini2">
+              <button className="">
+                {" "}
+                <Image src={GitHub} alt="" className="w-7 sm:w-8 md:w-10 " />
+              </button>{" "}
+            </Link>
+
+            <Link href="https://www.linkedin.com/in/leandro-mortarini/">
               {" "}
-              <Image src={GitHub} alt="" className="w-7 sm:w-8 md:w-10 " />
-            </button>{" "}
-            <button>
-              {" "}
-              <Image
-                src={Linkedin}
-                alt=""
-                className="w-7 sm:w-8 md:w-10 ml-5"
-              />
-            </button>
-            <button>
-              {" "}
-              <Image
-                src={Whatsapp}
-                alt=""
-                className="w-7 sm:w-8 md:w-10 ml-5"
-              />
-            </button>
-            <button>
-              {" "}
-              <Image
-                src={Facebook}
-                alt=""
-                className="w-7 sm:w-8 md:w-10 ml-5"
-              />
-            </button>
-            <button>
-              {" "}
-              <Image
-                src={Instagram}
-                alt=""
-                className="w-7 sm:w-8 md:w-10 ml-5"
-              />
-            </button>
+              <button>
+                {" "}
+                <Image
+                  src={Linkedin}
+                  alt=""
+                  className="w-7 sm:w-8 md:w-10 ml-5"
+                />
+              </button>
+            </Link>
+            <Link href=" https://wa.me/541126034427">
+              <button>
+                {" "}
+                <Image
+                  src={Whatsapp}
+                  alt=""
+                  className="w-7 sm:w-8 md:w-10 ml-5"
+                />
+              </button>
+            </Link>
+            <Link href="https://web.facebook.com/leandro.mortarini.5/">
+              <button>
+                {" "}
+                <Image
+                  src={Facebook}
+                  alt=""
+                  className="w-7 sm:w-8 md:w-10 ml-5"
+                />
+              </button>
+            </Link>
+            <Link href="https://www.instagram.com/mortajunior/">
+              <button>
+                {" "}
+                <Image
+                  src={Instagram}
+                  alt=""
+                  className="w-7 sm:w-8 md:w-10 ml-5"
+                />
+              </button>
+            </Link>
           </div>
 
           {/* CONTAINER 2 */}

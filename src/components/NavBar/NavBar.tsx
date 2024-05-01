@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import BurgerIMG from "@/assets/menu.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavBar: React.FC = () => {
   const [burgerState, setBuger] = useState(false);
@@ -23,18 +24,31 @@ export const NavBar: React.FC = () => {
         </div>
 
         <div className="hidden sm:w-1/2  sm:flex justify-evenly">
-          <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
-            Home
-          </button>
-          <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
-            About
-          </button>
-          <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
-            Projects
-          </button>
-          <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
-            Technologies
-          </button>
+          <Link href="/">
+            <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
+              Home
+            </button>
+          </Link>
+
+          <Link href="/about">
+            <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
+              About
+            </button>
+          </Link>
+
+          <Link href="/projects">
+            {" "}
+            <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
+              Projects
+            </button>
+          </Link>
+
+          <Link href="/contact">
+            {" "}
+            <button className="hover:text-[#636bd9] sm:lg md:text-xl font-bold">
+              Contact
+            </button>
+          </Link>
         </div>
 
         <div className="hidden sm:w-1/4 sm:flex justify-center  sm:lg md:text-xl font-bold ">
@@ -56,14 +70,25 @@ export const NavBar: React.FC = () => {
         {/* CONTAINER BURGER */}
       </div>
       {burgerState ? (
-        <div className=" w-full h-[350px] bg-[#15172f]  absolute top-14 z-20">
+        <div className=" w-full h-[350px] bg-[#15172f] sm:hidden absolute top-14 z-20">
           <div className="w-full h-1/2 flex  flex-col justify-evenly items-center pt-4 ">
-            <button className="hover:text-[#636bd9] text-lg ">Home</button>
-            <button className="hover:text-[#636bd9] text-lg">About</button>
-            <button className="hover:text-[#636bd9] text-lg ">Projects</button>
-            <button className="hover:text-[#636bd9] text-lg">
-              Technologies
-            </button>
+            <Link href="/">
+              <button className="hover:text-[#636bd9] text-lg ">Home</button>
+            </Link>
+
+            <Link href="/about">
+              <button className="hover:text-[#636bd9] text-lg">About</button>
+            </Link>
+
+            <Link href="/projects">
+              <button className="hover:text-[#636bd9] text-lg ">
+                Projects
+              </button>
+            </Link>
+
+            <Link href="/contact">
+              <button className="hover:text-[#636bd9] text-lg">Contact</button>
+            </Link>
           </div>
 
           <div className="w-full h-1/2  flex justify-center items-center text-lg  ">

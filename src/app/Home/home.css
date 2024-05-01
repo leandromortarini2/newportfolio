@@ -9,3 +9,6 @@
   border-radius: 0 0 150px 50px;
   border-bottom: 15px solid #636bd953;
 }
+.textShadow {
+  text-shadow: 3px 3px 20px rgb(70, 88, 156);
+}
