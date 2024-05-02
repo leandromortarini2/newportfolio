@@ -70,7 +70,7 @@ body {
 }
 
 .ballMovile {
-  animation: ballMovile 5s infinite alternate; /* Agrega 'alternate' para que la animación se reproduzca hacia adelante y hacia atrás */
+  animation: ballMovile 5s infinite alternate;
   animation-timing-function: linear;
 }
 @keyframes ballMovile {
@@ -87,8 +87,20 @@ body {
   }
 }
 
-.textShadow {
-  text-shadow: 3px 3px 20px rgb(70, 88, 156);
+.textEffect {
+  text-shadow: 3px 3px 20px rgb(11, 64, 46);
+  animation: shadowTitle 1s infinite alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes shadowTitle {
+  0% {
+    color: #09544b;
+  }
+
+  100% {
+    color: #17dfc8;
+  }
 }
 .Title {
   font-family: "Roboto Condensed", sans-serif;

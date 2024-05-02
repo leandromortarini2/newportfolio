@@ -16,10 +16,10 @@ export const NavBar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-14 sm:h-16  flex justify-evenly items-center  ">
+      <div className="w-full h-14 sm:h-16  flex justify-evenly items-center  bg-gray-900 sm:bg-transparent ">
         <div className="w-1/2 sm:w-1/4 flex justify-center">
-          <h2 className=" text-lg font-semibold sm:text-teal-600 xl:text-xl sm:font-bold tracking-[2px]  ">
-            PORTFOLIO
+          <h2 className=" text-lg font-semibold  sm:text-teal-600 xl:text-xl sm:font-bold tracking-[2px] textEffect ">
+            Developer
           </h2>
         </div>
 
@@ -36,17 +36,17 @@ export const NavBar: React.FC = () => {
             </button>
           </Link>
 
+          <Link href="/skills">
+            {" "}
+            <button className="hover:text-teal-300 text-teal-700  sm:lg xl:text-xl font-bold">
+              Skills
+            </button>
+          </Link>
+
           <Link href="/projects">
             {" "}
             <button className="hover:text-teal-300 text-teal-700 sm:lg xl:text-xl font-bold">
               Projects
-            </button>
-          </Link>
-
-          <Link href="/contact">
-            {" "}
-            <button className="hover:text-teal-300 text-teal-700  sm:lg xl:text-xl font-bold">
-              Contact
             </button>
           </Link>
         </div>
@@ -70,27 +70,35 @@ export const NavBar: React.FC = () => {
         {/* CONTAINER BURGER */}
       </div>
       {burgerState ? (
-        <div className=" w-full h-[350px] bg-[#0f0f13] sm:hidden absolute top-14 z-20">
+        <div className=" w-full h-[350px] bg-gray-800 sm:hidden absolute top-14 z-30">
           <div className="w-full h-1/2 flex  flex-col justify-evenly items-center pt-4 ">
             <Link href="/">
-              <button className="hover:text-teal-300  text-lg ">Home</button>
+              <button className="hover:text-teal-300 text-teal-700  text-lg ">
+                Home
+              </button>
             </Link>
 
             <Link href="/about">
-              <button className="hover:text-teal-300 text-lg">About</button>
+              <button className="hover:text-teal-300 text-teal-700  text-lg">
+                About
+              </button>
+            </Link>
+
+            <Link href="/skills">
+              <button className="hover:text-teal-300 text-teal-700  text-lg">
+                Skills
+              </button>
             </Link>
 
             <Link href="/projects">
-              <button className="hover:text-teal-300 text-lg ">Projects</button>
-            </Link>
-
-            <Link href="/contact">
-              <button className="hover:text-teal-300 text-lg">Contact</button>
+              <button className="hover:text-teal-300 text-teal-700  text-lg ">
+                Projects
+              </button>
             </Link>
           </div>
 
           <div className="w-full h-1/2  flex justify-center items-center text-md ">
-            <button className="p-1 h-[35px]  border rounded-lg hover:text-teal-300 hover:border-teal-300 block  ">
+            <button className="p-1 h-[35px]  border border-teal-700 rounded-lg hover:text-teal-300 hover:border-teal-300 block text-teal-700   ">
               Download CV
             </button>
           </div>

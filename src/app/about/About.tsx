@@ -52,7 +52,7 @@ const About = () => {
               mientras contribuyo al desarrollo de soluciones innovadoras.
             </p>
           </div>{" "}
-          <div className="hidden md:flex w-1/4 ">
+          <div className="hidden sm:flex w-1/4 ">
             <div className="w-20 h-20 bg-teal-800  rounded-full ball z-0 opacity-60"></div>
             <Image
               src={Perfil}
