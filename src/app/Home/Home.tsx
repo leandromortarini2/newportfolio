@@ -29,13 +29,13 @@ export const Home = () => {
               <h2 className="p-2 sm:text-lg xl:text-2xl font-normal  text-justify tracking-[3px] ">
                 SOY
               </h2>
-              <h1 className="p-2 sm:text-2xl xl:text-5xl text-start text-teal-500 tracking-[3px] ">
+              <h1 className="p-2 sm:text-2xl xl:text-5xl text-start text-teal-500 tracking-[3px] TitleHome">
                 Leandro Mortarini
               </h1>
               <h2 className="p-2 sm:text-2xl xl:text-4xl tracking-[3px] ">
                 Full Stack Developer
               </h2>
-              <h3 className="p-2 sm:text-lg xl:text-2xl text-teal-800 ">
+              <h3 className="p-2 sm:text-lg xl:text-2xl text-teal-800 TitleHome ">
                 leandromortarini2@gmail.com
               </h3>
             </div>

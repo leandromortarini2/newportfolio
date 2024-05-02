@@ -52,9 +52,14 @@ export const NavBar: React.FC = () => {
         </div>
 
         <div className="hidden sm:w-1/4 sm:flex justify-center  sm:lg xl:text-xl font-bold ">
-          <button className="p-1 border border-teal-700 rounded-lg text-teal-700 hover:text-teal-300 hover:border-teal-300 block text-[12px] xl:text-lg xl:p-2 ">
-            Download CV
-          </button>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vSaMUsNK5DUQArFCfDuOtO-Ys_wuCUZafXnD-Q6goJMAI2jzVeCBXrek6MVa4Z2mL-3OSb5CgYE3UjI/pub"
+            download="CV_Leandro_Mortarini.pdf"
+          >
+            <button className="p-1 border border-teal-700 rounded-lg text-teal-700 hover:text-teal-300 hover:border-teal-300 block text-[12px] xl:text-lg xl:p-2 ">
+              Visit CV
+            </button>
+          </a>
         </div>
 
         {/* BURGER */}
@@ -98,9 +103,14 @@ export const NavBar: React.FC = () => {
           </div>
 
           <div className="w-full h-1/2  flex justify-center items-center text-md ">
-            <button className="p-1 h-[35px]  border border-teal-700 rounded-lg hover:text-teal-300 hover:border-teal-300 block text-teal-700   ">
-              Download CV
-            </button>
+            <a
+              href="https://docs.google.com/document/d/e/2PACX-1vSaMUsNK5DUQArFCfDuOtO-Ys_wuCUZafXnD-Q6goJMAI2jzVeCBXrek6MVa4Z2mL-3OSb5CgYE3UjI/pub"
+              download="CV_Leandro_Mortarini.pdf"
+            >
+              <button className="p-1 h-[35px]  border border-teal-700 rounded-lg hover:text-teal-300 hover:border-teal-300 block text-teal-700   ">
+                Visit CV
+              </button>
+            </a>
           </div>
         </div>
       ) : null}

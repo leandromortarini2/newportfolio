@@ -24,7 +24,7 @@ export const Skills = () => {
         <div className="w-full flex justify-center items-center">
           <div className="w-3/4 flex flex-col sm:flex-row flex-wrap justify-evenly">
             {/*  */}
-            <div className="w-full sm:w-1/3 xl:w-1/4 h-12 xl:h-14 bg-slate-900 mb-5 sm:m-2 xl:m-5 rounded-xl  flex items-center shadow-lg  duration-500 hover:scale-110  hover:shadow-teal-900 ">
+            <div className="w-full sm:w-1/3 xl:w-1/4 h-12 xl:h-14 bg-slate-900 mb-5 sm:m-2 xl:m-5 rounded-xl  flex items-center shadow-lg  duration-500 hover:scale-110  hover:shadow-teal-900  ">
               <Image
                 src={codeImg}
                 alt=""

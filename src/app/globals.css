@@ -17,6 +17,8 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lugrasimo&family=Orbitron:wght@400..900&display=swap");
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -108,4 +110,20 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 3px;
+}
+.TitleHome {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.ImgCards {
+  filter: drop-shadow(0px 0px 0px 0);
+  transition: 1s;
+}
+
+.ImgCards:hover {
+  filter: drop-shadow(0px 0px 10px rgb(15, 136, 134));
+  transform: scale(1.2);
 }
