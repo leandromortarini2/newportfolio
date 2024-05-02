@@ -9,19 +9,33 @@ const About = () => {
     <>
       <div className="containerHome w-full min-h-screen flex flex-col items-center ">
         <NavBar />
-        <div className="w-3/4 md:h-[150px] flex items-end  ">
-          <h2 className="text-xl sm:text-3xl md:text-6xl  text-start Title  text-teal-500">
+        <div className="w-3/4 mt-5 mb-5 xl:h-[150px] flex items-center sm:items-end justify-center sm:justify-normal  ">
+          <h2 className="text-xl text-center sm:text-2xl lg:text-4xl  lg:text-start xl:text-5xl   Title  text-teal-500 opacity-50">
             About
           </h2>
-          <Image src={codeImg} alt="" className="w-14" />
+          <Image
+            src={codeImg}
+            alt=""
+            className="w-6 lg:w-10 xl:w-12 opacity-50"
+          />
         </div>
 
         {/* container */}
-        <div className="w-full flex justify-center items-center ">
-          <div className="w-1/2">
-            <p className="text-sm sm:text-md md:text-lg text-justificado font-semibold p-5 md:p-20 ">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center  ">
+          {/* IMAGE VIEW MOVILE */}
+          <div className="w-full sm:w-1/4  md:hidden flex justify-center items-center">
+            <div className="w-10 h-10 bg-teal-800  rounded-full ballMovile z-0 os"></div>
+            <Image
+              src={Perfil}
+              alt=""
+              className="ImgPerfil w-40 sm:w-3/4 sm:ml-9 md:m-0  z-20"
+            />
+          </div>
+          {/* CONTAINER TEXT */}
+          <div className="w-full md:w-1/2">
+            <p className="text-sm text-center sm:text-md xl:text-lg xl:text-justificado  font-semibold p-6 xl:p-20  ">
               Hola! soy Leandro Mortarini y me forme como <br />
-              <span className="text-teal-500 text-2xl">
+              <span className="text-teal-500 lg:text-xl xl:text-2xl">
                 Full Stack Developer con especialización en Front End.
               </span>{" "}
               <br />
@@ -38,16 +52,16 @@ const About = () => {
               mientras contribuyo al desarrollo de soluciones innovadoras.
             </p>
           </div>{" "}
-          <div className="w-1/4">
+          <div className="hidden md:flex w-1/4 ">
+            <div className="w-20 h-20 bg-teal-800  rounded-full ball z-0 opacity-60"></div>
             <Image
               src={Perfil}
               alt=""
-              className="ImgPerfil w-40 sm:w-3/4 sm:ml-9 md:m-0 opacity-80"
+              className="ImgPerfil w-40 sm:w-3/4 md:w-full lg:w-3/4 opacity-100 z-20"
             />
           </div>
         </div>
       </div>
-      <div className="hidden sm:w-1/2  sm:flex justify-center sm:items-end items-center "></div>
     </>
   );
 };

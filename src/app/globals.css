@@ -48,10 +48,48 @@ body {
   border-radius: 0 0 150px 50px;
   border-bottom: 15px solid #09564d50;
 }
+
+.ball {
+  animation: moveBall 5s infinite alternate; /* Agrega 'alternate' para que la animación se reproduzca hacia adelante y hacia atrás */
+  animation-timing-function: linear;
+}
+@keyframes moveBall {
+  0% {
+    position: relative;
+    top: 50px;
+    left: 20%;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    position: relative;
+    top: 50px;
+    left: 70%;
+  }
+}
+
+.ballMovile {
+  animation: ballMovile 5s infinite alternate; /* Agrega 'alternate' para que la animación se reproduzca hacia adelante y hacia atrás */
+  animation-timing-function: linear;
+}
+@keyframes ballMovile {
+  0% {
+    position: relative;
+    left: 0;
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    position: relative;
+    left: 50%;
+  }
+}
+
 .textShadow {
   text-shadow: 3px 3px 20px rgb(70, 88, 156);
 }
-
 .Title {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;

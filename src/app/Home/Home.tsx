@@ -23,31 +23,31 @@ export const Home = () => {
             {/* CONTAINER 1 */}
             {/*  */}
             <div className="sm:w-3/4 flex flex-col justify-center items-center sm:items-centerk  ">
-              <h2 className="p-2 sm:text-lg md:text-2xl font-normal  text-center tracking-[3px]  ">
+              <h2 className="p-2 sm:text-lg xl:text-2xl font-normal  text-center tracking-[3px]  ">
                 BIENVENIDOS
               </h2>
-              <h2 className="p-2 sm:text-lg md:text-2xl font-normal  text-justify tracking-[3px] ">
+              <h2 className="p-2 sm:text-lg xl:text-2xl font-normal  text-justify tracking-[3px] ">
                 SOY
               </h2>
-              <h1 className="p-2 sm:text-2xl md:text-6xl text-start text-teal-500 tracking-[3px] ">
+              <h1 className="p-2 sm:text-2xl xl:text-5xl text-start text-teal-500 tracking-[3px] ">
                 Leandro Mortarini
               </h1>
-              <h2 className="p-2 sm:text-2xl md:text-4xl tracking-[3px] ">
+              <h2 className="p-2 sm:text-2xl xl:text-4xl tracking-[3px] ">
                 Full Stack Developer
               </h2>
-              <h3 className="p-2 sm:text-lg md:text-3xl text-teal-800 ">
+              <h3 className="p-2 sm:text-lg xl:text-2xl text-teal-800 ">
                 leandromortarini2@gmail.com
               </h3>
             </div>
 
-            <div className="sm:w-1/2 h-20 flex justify-evenly items-center md:mt-44 ">
+            <div className="sm:w-1/2 h-20 flex justify-evenly items-center xl:mt-20 ">
               <Link href="https://github.com/leandromortarini2">
                 <button className="">
                   {" "}
                   <Image
                     src={GitHub}
                     alt=""
-                    className="w-7 sm:w-8 md:w-14 opacity-50 hover:opacity-100 "
+                    className="w-7 sm:w-8 xl:w-12 opacity-50 hover:opacity-100 "
                   />
                 </button>{" "}
               </Link>
@@ -59,7 +59,7 @@ export const Home = () => {
                   <Image
                     src={Linkedin}
                     alt=""
-                    className="w-7 sm:w-8 md:w-14 ml-5 opacity-50 hover:opacity-100 "
+                    className="w-7 sm:w-8 xl:w-12 ml-5 opacity-50 hover:opacity-100 "
                   />
                 </button>
               </Link>
@@ -69,7 +69,7 @@ export const Home = () => {
                   <Image
                     src={Whatsapp}
                     alt=""
-                    className="w-7 sm:w-8 md:w-14 ml-5 opacity-50 hover:opacity-100 "
+                    className="w-7 sm:w-8 xl:w-12 ml-5 opacity-50 hover:opacity-100 "
                   />
                 </button>
               </Link>
@@ -79,7 +79,7 @@ export const Home = () => {
                   <Image
                     src={Facebook}
                     alt=""
-                    className="w-7 sm:w-8 md:w-14 ml-5 opacity-50 hover:opacity-100 "
+                    className="w-7 sm:w-8 xl:w-12 ml-5 opacity-50 hover:opacity-100 "
                   />
                 </button>
               </Link>
@@ -89,7 +89,7 @@ export const Home = () => {
                   <Image
                     src={Instagram}
                     alt=""
-                    className="w-7 sm:w-8 md:w-14 ml-5 opacity-50 hover:opacity-100 "
+                    className="w-7 sm:w-8 xl:w-12 ml-5 opacity-50 hover:opacity-100 "
                   />
                 </button>
               </Link>
