@@ -15,6 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,10 +25,37 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.containerHome {
+  background-image: linear-gradient(#13151edb, #10121af5),
+    url("../assets/officina.jpg");
+  background-size: cover;
+}
+
+.ImgPerfil {
+  filter: drop-shadow(5px 0px 10px #09544b);
+  border-radius: 0 0 150px 50px;
+  border-bottom: 15px solid #09564d50;
+}
+.textShadow {
+  text-shadow: 3px 3px 20px rgb(70, 88, 156);
+}
+
+.Title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
