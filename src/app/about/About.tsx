@@ -24,7 +24,7 @@ const About = () => {
         <div className="w-full flex flex-col md:flex-row justify-center items-center  ">
           {/* IMAGE VIEW MOVILE */}
           <div className="w-full sm:w-1/4  md:hidden flex justify-center items-center">
-            <div className="w-10 h-10 bg-teal-800  rounded-full ballMovile z-0 os"></div>
+            <div className="w-10 h-10  bg-teal-800  rounded-full ballMovile z-0 "></div>
             <Image
               src={Perfil}
               alt=""
@@ -52,7 +52,7 @@ const About = () => {
               mientras contribuyo al desarrollo de soluciones innovadoras.
             </p>
           </div>{" "}
-          <div className="hidden sm:flex w-1/4 ">
+          <div className="hidden  md:flex w-1/4 ">
             <div className="w-20 h-20 bg-teal-800  rounded-full ball z-0 opacity-60"></div>
             <Image
               src={Perfil}
