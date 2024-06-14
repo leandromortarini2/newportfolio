@@ -33,7 +33,7 @@ export const Footer = () => {
 
             <li>
               <a href="https://wa.me/541126034427" className="hover:underline">
-                Wathsapp
+                WhatsApp
               </a>
             </li>
           </ul>
