@@ -34,7 +34,8 @@ const About = () => {
           {/* CONTAINER TEXT */}
           <div className="w-full md:w-1/2">
             <p className="text-sm text-center sm:text-md xl:text-lg xl:text-justificado  font-semibold p-6 xl:p-20  ">
-              Hola! soy Leandro Mortarini y me forme como <br />
+              Hola! Soy Leandro Mortarini y me formé como
+              <br />
               <span className="text-teal-500 lg:text-xl xl:text-2xl">
                 Full Stack Developer con especialización en Front End.
               </span>{" "}
@@ -46,7 +47,7 @@ const About = () => {
               <br /> Soy un firme creyente en el poder del trabajo en equipo y
               tengo habilidades sólidas para colaborar eficazmente con colegas
               de diversos ámbitos. <br />
-              Tambien cuento con una gran determinación, me esfuerzo por superar
+              También cuento con una gran determinación, me esfuerzo por superar
               desafíos y alcanzar objetivos con eficiencia. Estoy emocionado de
               seguir creciendo y aprendiendo en este dinámico campo tecnológico
               mientras contribuyo al desarrollo de soluciones innovadoras.

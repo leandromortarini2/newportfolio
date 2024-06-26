@@ -29,7 +29,7 @@ export const Projects = () => {
         {/* CARDS */}
         <div className="w-full flex  flex-wrap justify-evenly ">
           {" "}
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
+          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
             <Image
               src={rinDoor}
               alt=""
@@ -37,7 +37,9 @@ export const Projects = () => {
             />
             <div className="flex flex-col justify-center items-center">
               {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold">Rin|Door</h2>
+              <h2 className="  mt-2  lg:text-lg xl:font-semibold pt-3">
+                Rin|Door
+              </h2>
               <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
                 <span className="text-teal-500">
                   Next Js | Tailwind | Javascript | OAuth 2.0
@@ -49,7 +51,7 @@ export const Projects = () => {
                 escoger el profesional que deseen dentro de los que se
                 postularon para el trabajo.
               </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
+              <div className="w-full md:w-1/4 m-2 flex justify-center items-center ">
                 <Link href="https://github.com/leandromortarini2/Rindoor-2.0">
                   <button>
                     <Image
@@ -71,7 +73,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
+          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
             <Image
               src={Ecommerce}
               alt=""
@@ -106,7 +108,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
+          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
             <Image
               src={ShiftManager}
               alt=""
@@ -141,7 +143,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
+          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
             <Image
               src={AppMovies}
               alt=""
