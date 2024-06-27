@@ -45,7 +45,7 @@ export const Projects = () => {
                   Next Js | Tailwind | Javascript | OAuth 2.0
                 </span>{" "}
                 <br />
-                Rindoor es una aplicacion donde los profecionales se suscriben y
+                Rindoor es una aplicación donde los profesionales se suscriben y
                 pueden acceder a trabajos publicados por clientes, estos
                 clientes publican sus necesidades de forma gratuita y pueden
                 escoger el profesional que deseen dentro de los que se
@@ -89,11 +89,11 @@ export const Projects = () => {
                   Next Js | Tailwind | Typescript | Context
                 </span>{" "}
                 <br />
-                Esta app la realize para el cuarto modulo del bootcamp Henry,es
-                un e-commerce de productos tecnologicos la cual permite
-                registrarce y loguearse con autenticacion de Token, seleccionar
-                un producto, ver sus detalles, agregarlo al carro y gestionar la
-                orden.
+                Esta app la realicé para el cuarto módulo del bootcamp Henry, es
+                un e-commerce de productos tecnológicos la cual permite
+                registrarse e iniciarse sesión con autenticación de Token,
+                seleccionar un producto, ver sus detalles, agregarlo al carro y
+                gestionarla Orden.
               </p>
               <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
                 <Link href="https://github.com/leandromortarini2/e-commerce.git">
@@ -125,9 +125,10 @@ export const Projects = () => {
                   Typescript |
                 </span>{" "}
                 <br />
-                Proyecto realizado en el Bootcamp Henry para el tercer modulo.
-                La App es un gestor de turnos para una clinica dental, que
-                permite registrarce, loguearse , solicitar turnos y cancelarlos.
+                Proyecto realizado en el Bootcamp Henry para el tercer módulo.
+                La App es un gestor de turnos para una clínica dental, que
+                permite registrarse, iniciarse sesión, solicitar turnos y
+                cancelarlos.
               </p>
               <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
                 <Link href="https://github.com/leandromortarini2/ShiftManager.git">
@@ -159,9 +160,10 @@ export const Projects = () => {
                   HTML | Css | Javascript | Bootstraps{" "}
                 </span>{" "}
                 <br />
-                Esta app la realize para el segundo modulo del bootcamp Henry,es
-                una app simple que contiene solicitudes a la data base, mapeos
-                de cards y un formulario para poder crear nuevas peliculas.
+                Esta app la realicé para el segundo módulo del bootcamp Henry,
+                es una app simple que contiene solicitudes a la data base,
+                mapeos de cards y un formulario para poder crear nuevas
+                películas.
               </p>
               <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
                 <Link href="https://github.com/leandromortarini2/MovieApp.git">
