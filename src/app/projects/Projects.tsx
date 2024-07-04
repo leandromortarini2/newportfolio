@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { NavBar } from "@/components/NavBar/NavBar";
 import Image from "next/image";
@@ -29,6 +30,48 @@ export const Projects = () => {
         {/* CARDS */}
         <div className="w-full flex  flex-wrap justify-evenly ">
           {" "}
+          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
+            <img
+              src="https://i.ibb.co/hXpQ4r6/home2.jpg"
+              alt=""
+              className="w-full md:w-1/3 h-full opacity-80 "
+            />
+            <div className="flex flex-col justify-center items-center">
+              {" "}
+              <h2 className="  mt-2  lg:text-lg xl:font-semibold pt-3">
+                MarvelWorld
+              </h2>
+              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
+                <span className="text-teal-500">
+                  React | Tailwind | Javascript | CSS
+                </span>{" "}
+                <br />
+                MarvelWorld es una aplicación donde se hacen consumo de API
+                REST. Esta aplicación se encuentra en proceso, ya que tendrá un
+                Carrito de compras y método de pago.
+              </p>
+              <div className="w-full md:w-1/4 m-2 flex justify-center items-center ">
+                <Link href="https://github.com/leandromortarini2/MarvelWorld">
+                  <button>
+                    <Image
+                      src={gitHubImg}
+                      alt=""
+                      className=" w-8 mr-4 shadow-lg ImgCards "
+                    />
+                  </button>
+                </Link>
+                <Link href="https://marvel-world-jet.vercel.app/">
+                  <button>
+                    <Image
+                      src={vercelImg}
+                      alt=""
+                      className=" w-8 mr-4 shadow-lg ImgCards "
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
             <Image
               src={rinDoor}
