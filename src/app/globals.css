@@ -127,3 +127,13 @@ body {
   filter: drop-shadow(0px 0px 10px rgb(15, 136, 134));
   transform: scale(1.2);
 }
+
+.imgEffectRigth {
+  -webkit-mask-image: linear-gradient(to right, black, transparent);
+  mask-image: linear-gradient(to right, black, transparent);
+}
+
+.imgEffectLow {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}

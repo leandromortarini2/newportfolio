@@ -18,7 +18,7 @@ export const Projects = () => {
       <div className="containerHome w-full min-h-screen flex flex-col items-center ">
         <NavBar />
         <div className="w-3/4 mt-5 mb-5 xl:h-[150px] flex items-center sm:items-end justify-center sm:justify-normal  ">
-          <h2 className="text-xl text-center sm:text-2xl lg:text-4xl  lg:text-start xl:text-5xl   Title  text-teal-500 opacity-50">
+          <h2 className="text-2xl text-center sm:text-2xl lg:text-4xl  lg:text-start xl:text-5xl   Title  text-teal-400 opacity-50">
             Projects
           </h2>
           <Image
@@ -28,197 +28,396 @@ export const Projects = () => {
           />
         </div>
         {/* CARDS */}
-        <div className="w-full flex  flex-wrap justify-evenly ">
+        <div className="w-full flex  flex-wrap justify-evenly  ">
           {" "}
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
-            <img
-              src="https://i.ibb.co/hXpQ4r6/home2.jpg"
-              alt=""
-              className="w-full md:w-1/3 h-full opacity-80 "
-            />
-            <div className="flex flex-col justify-center items-center">
-              {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold pt-3">
-                MarvelWorld
-              </h2>
-              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
-                <span className="text-teal-500">
-                  React | Tailwind | Javascript | CSS
-                </span>{" "}
-                <br />
-                MarvelWorld es una aplicación donde se hacen consumo de API
-                REST. Esta aplicación se encuentra en proceso, ya que tendrá un
-                Carrito de compras y método de pago.
-              </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center ">
-                <Link href="https://github.com/leandromortarini2/MarvelWorld">
-                  <button>
-                    <Image
-                      src={gitHubImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
-                <Link href="https://marvel-world-jet.vercel.app/">
-                  <button>
-                    <Image
-                      src={vercelImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
+          {/* card MarvelWorld */}
+          {/* card MarvelWorld */}
+          <div className="hidden w-full  lg:w-3/4 md:h-[250px]   md:m-3 md:flex rounded-2xl overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <img
+                className="w-full h-full imgEffectRigth"
+                src="https://i.ibb.co/hXpQ4r6/home2.jpg"
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  MarvelWorld
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    React | Tailwind | Javascript | CSS <br />
+                  </span>
+                  MarvelWorld es una aplicación donde se hacen consumo de API
+                  REST. Esta aplicación se encuentra en proceso, ya que tendrá
+                  un Carrito de compras y método de pago.{" "}
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/MarvelWorld">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://marvel-world-jet.vercel.app/">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
-            <Image
-              src={rinDoor}
-              alt=""
-              className="w-full md:w-1/3 h-full opacity-80 "
-            />
-            <div className="flex flex-col justify-center items-center">
+          {/* card MarvelWorld CELULAR */}
+          {/* card MarvelWorld CELULAR*/}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
               {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold pt-3">
-                Rin|Door
-              </h2>
-              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
-                <span className="text-teal-500">
-                  Next Js | Tailwind | Javascript | OAuth 2.0
-                </span>{" "}
-                <br />
-                Rindoor es una aplicación donde los profesionales se suscriben y
-                pueden acceder a trabajos publicados por clientes, estos
-                clientes publican sus necesidades de forma gratuita y pueden
-                escoger el profesional que deseen dentro de los que se
-                postularon para el trabajo.
-              </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center ">
-                <Link href="https://github.com/leandromortarini2/Rindoor-2.0">
-                  <button>
-                    <Image
-                      src={gitHubImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
-                <Link href="https://rindoor-2-0.vercel.app/">
-                  <button>
-                    <Image
-                      src={vercelImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
+              <img
+                className="w-full h-52 imgEffectLow"
+                src="https://i.ibb.co/hXpQ4r6/home2.jpg"
+                alt=""
+              />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  MarvelWorld
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    React | Tailwind | Javascript | CSS
+                  </span>{" "}
+                  MarvelWorld es una aplicación donde se hacen consumo de API
+                  REST. Esta aplicación se encuentra en proceso, ya que tendrá
+                  un Carrito de compras y método de pago. <br />
+                  <div className="w-full flex flex-col items-center">
+                    <Link href="https://github.com/leandromortarini2/MarvelWorld">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://marvel-world-jet.vercel.app/">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
-            <Image
-              src={Ecommerce}
-              alt=""
-              className="w-full md:w-1/3 h-full opacity-80 "
-            />
-            <div className="flex flex-col justify-center items-center">
-              {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold">
-                E-Commerce
-              </h2>
-              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
-                <span className="text-teal-500">
-                  Next Js | Tailwind | Typescript | Context
-                </span>{" "}
-                <br />
-                Esta app la realicé para el cuarto módulo del bootcamp Henry, es
-                un e-commerce de productos tecnológicos la cual permite
-                registrarse e iniciarse sesión con autenticación de Token,
-                seleccionar un producto, ver sus detalles, agregarlo al carro y
-                gestionarla Orden.
-              </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
-                <Link href="https://github.com/leandromortarini2/e-commerce.git">
-                  <button>
-                    <Image
-                      src={gitHubImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
+          {/* card RINDOOR */}
+          {/* card RINDOOR */}
+          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <Image
+                className="w-full h-full imgEffectRigth"
+                src={rinDoor}
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  Rin|Door{" "}
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    Next Js | Tailwind | Javascript | OAuth 2.0
+                    <br />
+                  </span>
+                  Rindoor es una aplicación donde los profesionales se suscriben
+                  y pueden acceder a trabajos publicados por clientes, estos
+                  clientes publican sus necesidades de forma gratuita y pueden
+                  escoger el profesional que deseen dentro de los que se
+                  postularon para el trabajo.
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/Rindoor-2.0">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://rindoor-2-0.vercel.app/">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
-            <Image
-              src={ShiftManager}
-              alt=""
-              className="w-full md:w-1/3 h-full opacity-80 "
-            />
-            <div className="flex flex-col justify-center items-center">
+          {/* card RINDOOR CELULAR */}
+          {/* card RINDOOR CELULAR*/}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
               {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold">
-                Shift Manager
-              </h2>
-              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
-                <span className="text-teal-500">
-                  React | React Router | Redux | Postgree | Javascript |
-                  Typescript |
-                </span>{" "}
-                <br />
-                Proyecto realizado en el Bootcamp Henry para el tercer módulo.
-                La App es un gestor de turnos para una clínica dental, que
-                permite registrarse, iniciarse sesión, solicitar turnos y
-                cancelarlos.
-              </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
-                <Link href="https://github.com/leandromortarini2/ShiftManager.git">
-                  {" "}
-                  <button>
-                    <Image
-                      src={gitHubImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
+              <Image
+                className="w-full h-52 imgEffectLow"
+                src={rinDoor}
+                alt=""
+              />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  Rin|Door{" "}
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    {" "}
+                    Next Js | Tailwind | Javascript | OAuth 2.0 <br />
+                  </span>{" "}
+                  Rindoor es una aplicación donde los profesionales se suscriben
+                  y pueden acceder a trabajos publicados por clientes, estos
+                  clientes publican sus necesidades de forma gratuita y pueden
+                  escoger el profesional que deseen dentro de los que se
+                  postularon para el trabajo.
+                  <div className="w-full flex flex-col items-center ">
+                    <Link href="https://github.com/leandromortarini2/Rindoor-2.0">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://rindoor-2-0.vercel.app/">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col md:flex-row md:w-3/4 lg:w-3/4 xl:w-1/2 md:min-h-[200px] bg-slate-900 rounded-xl overflow-hidden  m-5 shadow-lg shadow-teal-950">
-            <Image
-              src={AppMovies}
-              alt=""
-              className="w-full md:w-1/3 h-full opacity-80 "
-            />
-            <div className="flex flex-col justify-center items-center">
+          {/* card ECOMMERCE */}
+          {/* card ECOMMERCE */}
+          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <Image
+                className="w-full h-full imgEffectRigth"
+                src={Ecommerce}
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  E-Commerce
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    Next Js | Tailwind | Typescript | Context
+                    <br />
+                  </span>
+                  Esta app la realicé para el cuarto módulo del bootcamp Henry,
+                  es un e-commerce de productos tecnológicos la cual permite
+                  registrarse e iniciarse sesión con autenticación de Token,
+                  seleccionar un producto, ver sus detalles, agregarlo al carro
+                  y gestionarla Orden.
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/e-commerce.git">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* card ECOMMERCE CELULAR*/}
+          {/* card ECOMMERCE CELULAR*/}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
               {" "}
-              <h2 className="  mt-2  lg:text-lg xl:font-semibold">
-                App Movies
-              </h2>
-              <p className="md:text-sm lg:text-md p-2 xl:pl-5 xl:pr-5 ">
-                <span className="text-teal-500">
-                  HTML | Css | Javascript | Bootstraps{" "}
-                </span>{" "}
-                <br />
-                Esta app la realicé para el segundo módulo del bootcamp Henry,
-                es una app simple que contiene solicitudes a la data base,
-                mapeos de cards y un formulario para poder crear nuevas
-                películas.
-              </p>
-              <div className="w-full md:w-1/4 m-2 flex justify-center items-center">
-                <Link href="https://github.com/leandromortarini2/MovieApp.git">
-                  {" "}
-                  <button>
-                    <Image
-                      src={gitHubImg}
-                      alt=""
-                      className=" w-8 mr-4 shadow-lg ImgCards "
-                    />
-                  </button>
-                </Link>
+              <Image
+                className="w-full h-52 imgEffectLow"
+                src={Ecommerce}
+                alt=""
+              />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  E-Commerce
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    {" "}
+                    Next Js | Tailwind | Typescript | Context <br />
+                  </span>{" "}
+                  Esta app la realicé para el cuarto módulo del bootcamp Henry,
+                  es un e-commerce de productos tecnológicos la cual permite
+                  registrarse e iniciarse sesión con autenticación de Token,
+                  seleccionar un producto, ver sus detalles, agregarlo al carro
+                  y gestionarla Orden.
+                  <div className="w-full flex flex-col items-center ">
+                    <Link href="https://github.com/leandromortarini2/e-commerce.git">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* card SHIFT MANAGER */}
+          {/* card SHIFT MANAGER */}
+          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <Image
+                className="w-full h-full imgEffectRigth"
+                src={ShiftManager}
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  Shift Manager
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    React | React Router | Redux | Postgree | Javascript |
+                    Typescript | <br />
+                  </span>
+                  Proyecto realizado en el Bootcamp Henry para el tercer módulo.
+                  La App es un gestor de turnos para una clínica dental, que
+                  permite registrarse, iniciarse sesión, solicitar turnos y
+                  cancelarlos.
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/ShiftManager.git">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* card SHIFT MANAGER CELULAR*/}
+          {/* card SHIFT MANAGER CELULAR*/}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
+              {" "}
+              <Image
+                className="w-full h-52 imgEffectLow"
+                src={ShiftManager}
+                alt=""
+              />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  Shift Manager
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    {" "}
+                    Next Js | Tailwind | Typescript | Context <br />
+                  </span>{" "}
+                  Proyecto realizado en el Bootcamp Henry para el tercer módulo.
+                  La App es un gestor de turnos para una clínica dental, que
+                  permite registrarse, iniciarse sesión, solicitar turnos y
+                  cancelarlos.
+                  <div className="w-full flex flex-col items-center ">
+                    <Link href="https://github.com/leandromortarini2/ShiftManager.git">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* card SHIFT Movies */}
+          {/* card SHIFT Movies */}
+          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <Image
+                className="w-full h-full imgEffectRigth"
+                src={AppMovies}
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  MEGA PELIS
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    HTML | Css | Javascript | Bootstraps <br />
+                  </span>
+                  Esta app la realicé para el segundo módulo del bootcamp Henry,
+                  es una app simple que contiene solicitudes a la data base,
+                  mapeos de cards y un formulario para poder crear nuevas
+                  películas.
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/MovieApp.git">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* card SHIFT Movies CELULAR*/}
+          {/* card SHIFT Movies CELULAR*/}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
+              <Image
+                className="w-full h-52 imgEffectLow"
+                src={AppMovies}
+                alt=""
+              />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  MEGA PELIS
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    HTML | Css | Javascript | Bootstraps <br />
+                  </span>
+                  Esta app la realicé para el segundo módulo del bootcamp Henry,
+                  es una app simple que contiene solicitudes a la data base,
+                  mapeos de cards y un formulario para poder crear nuevas
+                  películas.
+                  <div className="w-full flex flex-col items-center ">
+                    <Link href="https://github.com/leandromortarini2/MovieApp.git">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
