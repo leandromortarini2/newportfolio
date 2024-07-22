@@ -4,6 +4,7 @@ import "./globals.css";
 import { NavBar } from "@/components/NavBar/NavBar";
 import { Footer } from "@/components/Footer/Footer";
 import Head from "next/head";
+import Perfil from "../assets/perfil.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,15 +21,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>Portfolio</title>
-        <meta property="og:title" content="Developer FullStack" />
+        <title>Portfolio de Leandro Mortarini</title>
+        <meta
+          property="og:title"
+          content="Portfolio de Leandro Mortarini - Full Stack Developer"
+        />
         <meta
           property="og:description"
           content="Descubre el portafolio de Leandro Mortarini, un desarrollador Full Stack especializado en front-end con experiencia en Next.js, React, Node.js, Express, TypeScript, Javascript. Explora proyectos innovadores, soluciones optimizadas y aplicaciones web modernas."
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/BnB9QBx/Imagen-de-Whats-App-2024-06-03-a-las-17-51-18-fc28d90d-copia.jpg"
+          content="https://i.ibb.co/7Nmtmpn/portada-Portfolio.jpg"
         />
         <meta
           property="og:url"
@@ -42,7 +46,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://i.ibb.co/BnB9QBx/Imagen-de-Whats-App-2024-06-03-a-las-17-51-18-fc28d90d-copia.jpg"
+          content="https://i.ibb.co/7Nmtmpn/portada-Portfolio.jpg"
         />
       </Head>
       <body className={inter.className}>
