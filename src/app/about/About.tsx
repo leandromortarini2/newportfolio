@@ -42,15 +42,14 @@ const About = () => {
               <br />
               Mi experiencia se centra en tecnologías como{" "}
               <span className="text-teal-500">
-                React, Next, Javascript, Node.js, Express y TypeScript.
+                React, TypeScript, Javascript, Tailwind, Node.js, Express, Next,
+                entre otras.
               </span>
-              <br /> Soy un firme creyente en el poder del trabajo en equipo y
-              tengo habilidades sólidas para colaborar eficazmente con colegas
-              de diversos ámbitos. <br />
-              También cuento con una gran determinación, me esfuerzo por superar
-              desafíos y alcanzar objetivos con eficiencia. Estoy emocionado de
-              seguir creciendo y aprendiendo en este dinámico campo tecnológico
-              mientras contribuyo al desarrollo de soluciones innovadoras.
+              <br /> Mi enfoque se centra en crear aplicaciones web modernas y
+              altamente funcionales, ofreciendo interfaces responsivas y
+              atractivas. Con un firme compromiso, habilidades de trabajo en
+              equipo y una gran determinación, garantizo resultados que superan
+              las expectativas del cliente.
             </p>
           </div>{" "}
           <div className="hidden  md:flex w-1/4 ">
