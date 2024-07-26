@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <title>Portfolio de Leandro Mortarini</title>
+
         <meta
           property="og:title"
           content="Portfolio de Leandro Mortarini - Full Stack Developer"

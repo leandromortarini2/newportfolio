@@ -3,9 +3,7 @@ import React from "react";
 import { NavBar } from "@/components/NavBar/NavBar";
 import Image from "next/image";
 import codeImg from "@/assets/code.svg";
-import projectImg from "@/assets/Project1.png";
-import gitHubImg from "@/assets/gitHubWhite.png";
-import vercelImg from "@/assets/vercel.png";
+import Stetic from "@/assets/stetic.jpg";
 import rinDoor from "@/assets/Captura de pantalla 2024-05-31 192422.jpg";
 import AppMovies from "@/assets/AppMovies.jpg";
 import ShiftManager from "@/assets/gestorTurnos.jpg";
@@ -17,6 +15,7 @@ export const Projects = () => {
     <>
       <div className="containerHome w-full min-h-screen flex flex-col items-center ">
         <NavBar />
+
         <div className="w-3/4 mt-5 mb-5 xl:h-[150px] flex items-center sm:items-end justify-center sm:justify-normal  ">
           <h2 className="text-2xl text-center sm:text-2xl lg:text-4xl  lg:text-start xl:text-5xl   Title  text-teal-400 opacity-50">
             Projects
@@ -30,9 +29,91 @@ export const Projects = () => {
         {/* CARDS */}
         <div className="w-full flex  flex-wrap justify-evenly  ">
           {" "}
+          {/* Stetic Glam */}
+          {/* Stetic Glam */}
+          {/* Stetic Glam */}
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
+            <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
+              <Image
+                className="w-full h-full imgEffectRigth"
+                src={Stetic}
+                alt=""
+              />
+            </div>
+            <div className="w-3/4  h-52  lg:min-h-[300px] flex flex-col justify-evenly  ml-5 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-300 font-bold text-lg  lg:text-3xl xl:text-4xl capitalize p-2">
+                  Stetic Glam
+                </h2>
+                <p className=" text-gray-300 font-semibold text-md   lg:text-xl xl:text-2xl  capitalize p-2">
+                  <span className="text-teal-500">
+                    React | TypeScript | Tailwind | Css
+                    <br />
+                  </span>
+                  Stetic Glam es una estética dirigida por Yohana Campos, una
+                  profesional que tiene una dedicación especial hacia sus
+                  clientes, quienes son atendidos con cuidado y de manera
+                  exclusiva por ella.
+                </p>
+                <div className="w-full md:w-full m-2 flex justify-end   ">
+                  <div className="w-3/4  flex justify-around">
+                    <Link href="https://github.com/leandromortarini2/steticGlam">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://stetic-glam.vercel.app/">
+                      <span className="p-1 md:text-lg xl:text-2xl font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Stetic Celu */}
+          {/* Stetic Celu */}
+          {/* Stetic Celu */}
+          <div className="w-full min-h-[300px]  flex flex-col justify-center md:hidden bg-gray-800">
+            <div className="w-full  ">
+              {" "}
+              <Image className="w-full h-52 imgEffectLow" src={Stetic} alt="" />
+            </div>
+            <div className="w-full flex flex-col justify-evenly items-center mb-2 ">
+              <div>
+                {" "}
+                <h2 className=" text-gray-200 font-bold  text-2xl  text-center capitalize">
+                  Stetic Glam
+                </h2>
+                <p className=" text-gray-300 font-semibold  text-lg text-center p-2 capitalize">
+                  <span className="text-teal-500">
+                    React | TypeScript | Tailwind | Css
+                  </span>{" "}
+                  Stetic Glam es una estética dirigida por Yohana Campos, una
+                  profesional que tiene una dedicación especial hacia sus
+                  clientes, quienes son atendidos con cuidado y de manera
+                  exclusiva por ella. <br />
+                  <div className="w-full flex flex-col items-center">
+                    <Link href="https://github.com/leandromortarini2/steticGlam">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        visit GitHub
+                      </span>
+                    </Link>
+                    <Link href="https://stetic-glam.vercel.app/">
+                      <span className="p-1 font-bold capitalize text-gray-500 rounded-lg  tracking-wide hover:text-teal-500">
+                        Visit Web
+                      </span>
+                    </Link>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
           {/* card MarvelWorld */}
           {/* card MarvelWorld */}
-          <div className="hidden w-full  lg:w-3/4 md:h-[250px]   md:m-3 md:flex rounded-2xl overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
             <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
               <img
                 className="w-full h-full imgEffectRigth"
@@ -113,7 +194,7 @@ export const Projects = () => {
           </div>
           {/* card RINDOOR */}
           {/* card RINDOOR */}
-          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
             <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
               <Image
                 className="w-full h-full imgEffectRigth"
@@ -200,7 +281,7 @@ export const Projects = () => {
           </div>
           {/* card ECOMMERCE */}
           {/* card ECOMMERCE */}
-          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
             <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
               <Image
                 className="w-full h-full imgEffectRigth"
@@ -277,7 +358,7 @@ export const Projects = () => {
           </div>
           {/* card SHIFT MANAGER */}
           {/* card SHIFT MANAGER */}
-          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
             <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
               <Image
                 className="w-full h-full imgEffectRigth"
@@ -352,7 +433,7 @@ export const Projects = () => {
           </div>
           {/* card SHIFT Movies */}
           {/* card SHIFT Movies */}
-          <div className="hidden w-full  lg:w-3/4 md:min-h-[290px] lg:min-h-[350px]  md:m-3 md:flex rounded-2xl overflow-hidden  justify-center bg-gray-900  shadow-lg shadow-teal-950">
+          <div className="hidden w-full  lg:w-full md:h-[250px]   md:m-3 md:flex  overflow-hidden lg:min-h-[300px] justify-center bg-gray-900  shadow-lg shadow-teal-950">
             <div className="w-1/2 min-h-52  lg:min-h-[300px]  lg:ronunded-2xl">
               <Image
                 className="w-full h-full imgEffectRigth"
